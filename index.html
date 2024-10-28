@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon Stationery-Shop</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ruge+Boogie&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu">
+                <span class="cabeçalho_menu-hamburguer container_imagem "></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu_titulo">Categorias</li>
+                <li class="lista-menu_item"><a href="#" class="lista-menu_link">Promoção</a></li>
+                <li class="lista-menu_item"><a href="#" class="lista-menu_link">Escrita</a></li>
+                <li class="lista-menu_item"><a href="#" class="lista-menu_link">Papelaria</a></li>
+                <li class="lista-menu_item"><a href="#" class="lista-menu_link">Cadernos</a></li>
+            </ul>
+
+            <img src="img/Logo.svg" alt="logo da Leon.Stationery" class="container_imagem">
+        </div>
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="meus favoritos" class="container_imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="carrinho de compras" class="container_imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="meu perfil" class="container_imagem"></a>
+        </div>
+
+    </header>
+    <section class="banner">
+        <h2 class="banner_titulo">Aqui Temos</h2>
+        <p class="banner_texto">As Melhores Ofertas para o Estudante</p>
+        <input type="search" class="banner_pesquisa" placeholder="pesquisar">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/caderno.svg.svg" alt="Caderno preto simples"></div>
+                <div class="swiper-slide"><img src="img/canetapreta.svg.svg" alt="Kit canetas pretas"></div>
+                <div class="swiper-slide"><img src="img/cadernocolorido.svg.svg" alt="Lindo caderno rosa"></div>
+                <div class="swiper-slide"><img src="img/canetaazul.svg.svg" alt="Caneta azul CIS"></div>
+                <div class="swiper-slide"><img src="img/lapisdecor.svg.svg" alt="Lapis de cor 12 cores"></div>
+                <div class="swiper-slide"><img src="img/marcatexto.svg.svg" alt="Kit marca-texto"></div>
+            </div>
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1ª linha -->
+            <div class="card_descrição">
+                <!-- 1ª coluna -->
+                <div class="descrição">
+                    <h3 class="descrição_titulo">Talvez você tambem se interesse por...</h3>
+                    <h2 class="descrição_titulo-livro">Kit de Lapis de Cor de 48 cores</h2>
+                    <p class="descrição_texto">Com 50% de DESCONTO</p>
+                </div>
+                <!-- 2ª coluna -->
+                <img src="img/lapis48cores.svg.svg" class="descrição_imagem">
+            </div>
+
+            <!-- 2ª linha -->
+            <div class="card_botões">
+                <!-- 1ª coluna -->
+                <ul class="botões">
+                    <li class="botões_item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                    <li class="bptões_item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2ª coluna -->
+                <a href="#" class="botões_ancora">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos_titulo">Tópicos Mais Visitados</h2>
+        <ul class="tópicos_lista">
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Caderno</a>
+            </li>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Caneta</a>
+            </li>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Lapis de Cor</a>
+            </li>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Marca-Texto</a>
+            </li>
+            <li class="tópicos_item">
+                <a href="#" class="tópicos_link">Canetinha</a>
+            </li>
+        </ul>
+    </section>
+
+   <section class="contato">
+    <h2 class="contato_titulo">Fique Por Dentro das Novidades</h2>
+    <p class="contato_texto">Atualizações de novos produtos, promoções e outros.</p>
+    <input type="email" placeholder="Cadastre seu Email" class="contato_email">
+   </section>
+
+<hr/>
+
+<footer class="rodapé">
+    <h2 class="rodapé_titulo">Grupo Leon</h2>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
